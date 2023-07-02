@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <title>Restaurang Supreme</title>
+    <title>Nyheter - Restaurang Supreme</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
 </head>
 <body>
@@ -33,13 +33,22 @@
  
       </div>
     </div>
-    
- 
-  </header>
-
 </header>
 <div class="main">
+    <section id="news"></section>
 
+    <template id="news-template">
+        <article class="news-article">
+          <h3 id="news-title" class="news-title"></h3>
+          <p id="news-content" class="news-content"></p>
+          <span id="news-author" class="news-author"></span>
+          <span id="news-date" class="news-date"></span>
+          <a href="#" class="read-more">Läs mer</a>
+        </article>
+      </template>
+      
+    
+      
 </div>
 
 
@@ -63,6 +72,7 @@
 </div>
 </section>
 <script src="../js/menu.js"></script>
+<script type="module" src="../js/main.js"></script>
 </footer>
 
 </body>
