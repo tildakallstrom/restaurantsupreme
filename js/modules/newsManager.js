@@ -3,11 +3,9 @@ class NewsManager {
     this.newsEl = document.getElementById(newsElementId);
     this.template = document.getElementById(templateId);
   }
-
   init() {
     this.getNews();
   }
-
   getNews() {
     fetch('https://tildakallstrom.se/newsapi/news.php')
       .then(response => response.json())
@@ -17,10 +15,8 @@ class NewsManager {
           const newsItem = this.createNewsItem(news.title, news.content, news.author, formattedDate, news.image);
           this.newsEl.appendChild(newsItem);
 
-          // Lägg till händelselyssnare för klickhändelse på "Läs mer"-knappen
           const readMoreButton = newsItem.querySelector('.read-more-button');
           readMoreButton.addEventListener('click', () => {
-            // Dirigera användaren till artikelsidan för den specifika artikeln
             window.location.href = 'nyheter/artikel.html?id=' + news.id;
           });
         });
@@ -41,14 +37,7 @@ class NewsManager {
     titleEl.textContent = title;
     titleEl.classList.add('news-title');
     newsItem.appendChild(titleEl);
-  
-    const contentEl = document.createElement('p');
-    const words = content.split(' ');
-    const limitedContent = words.slice(0, 20).join(' ');
-    contentEl.textContent = limitedContent + '...';
-    contentEl.classList.add('news-content');
-    newsItem.appendChild(contentEl);
-  
+
     const authorEl = document.createElement('span');
     authorEl.textContent = author;
     authorEl.classList.add('news-author');
@@ -64,6 +53,13 @@ class NewsManager {
     imageEl.classList.add('news-image');
     newsItem.appendChild(imageEl);
   
+    const contentEl = document.createElement('p');
+    const words = content.split(' ');
+    const limitedContent = words.slice(0, 20).join(' ');
+    contentEl.textContent = limitedContent + '...';
+    contentEl.classList.add('news-content');
+    newsItem.appendChild(contentEl);
+  
     const readMoreButton = document.createElement('button');
     readMoreButton.textContent = 'Läs mer';
     readMoreButton.classList.add('read-more-button');
@@ -72,5 +68,4 @@ class NewsManager {
     return newsItem;
   }
 }
-
 export default NewsManager;
