@@ -24,7 +24,7 @@ class ArticleManager {
   
           if (selectedArticle) {
             const formattedDate = this.formatDate(selectedArticle.date);
-            const newsItem = this.createNewsItem(selectedArticle.title, selectedArticle.content, selectedArticle.author, formattedDate);
+            const newsItem = this.createNewsItem(selectedArticle.title, selectedArticle.image, selectedArticle.content, selectedArticle.author, formattedDate);
             this.newsEl.appendChild(newsItem);
           }
         });
@@ -36,13 +36,19 @@ class ArticleManager {
       return formattedDate;
     }
   
-    createNewsItem(title, content, author, date) {
+    createNewsItem(title, imageUrl, content, author, date) {
       const articleContainer = document.createElement('article');
       articleContainer.classList.add('news-article');
   
-      const articleTitle = document.createElement('h3');
+      const articleTitle = document.createElement('h2');
       articleTitle.textContent = title;
       articleContainer.appendChild(articleTitle);
+  
+      const imageEl = document.createElement('img');
+      imageEl.src = imageUrl;
+      imageEl.classList.add('article-image');
+      imageEl.alt = 'Article Image ' + title; // Lägg till alt-text här
+      articleContainer.appendChild(imageEl);
   
       const articleContent = document.createElement('p');
       articleContent.textContent = content;

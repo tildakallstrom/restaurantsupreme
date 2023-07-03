@@ -14,7 +14,7 @@ class NewsManager {
       .then(data => {
         data.forEach(news => {
           const formattedDate = this.formatDate(news.date);
-          const newsItem = this.createNewsItem(news.title, news.content, news.author, formattedDate);
+          const newsItem = this.createNewsItem(news.title, news.content, news.author, formattedDate, news.image);
           this.newsEl.appendChild(newsItem);
 
           // Lägg till händelselyssnare för klickhändelse på "Läs mer"-knappen
@@ -33,7 +33,7 @@ class NewsManager {
     return formattedDate;
   }
 
-  createNewsItem(title, content, author, date) {
+  createNewsItem(title, content, author, date, imageUrl) {
     const newsItem = document.createElement('article');
     newsItem.classList.add('news-article');
   
@@ -58,6 +58,11 @@ class NewsManager {
     dateEl.textContent = date;
     dateEl.classList.add('news-date');
     newsItem.appendChild(dateEl);
+
+    const imageEl = document.createElement('img');
+    imageEl.src = imageUrl;
+    imageEl.classList.add('news-image');
+    newsItem.appendChild(imageEl);
   
     const readMoreButton = document.createElement('button');
     readMoreButton.textContent = 'Läs mer';
@@ -66,7 +71,6 @@ class NewsManager {
   
     return newsItem;
   }
-  
 }
 
 export default NewsManager;
