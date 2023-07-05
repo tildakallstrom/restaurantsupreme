@@ -36,7 +36,7 @@ class MenuManager {
       const section = document.createElement('section');
       section.classList.add('menu-section');
   
-      const heading = document.createElement('h2');
+      const heading = document.createElement('h3');
       heading.textContent = type;
       section.appendChild(heading);
   
