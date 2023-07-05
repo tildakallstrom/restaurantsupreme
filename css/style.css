@@ -467,6 +467,8 @@ Optimized down to 300px wide screens */
     .main-article {
       display: grid;
       grid-template-columns: 2fr 1fr;
+      max-width: 1200px;
+      margin: auto;
       margin-top: 3em;
     }
     .one-article {
