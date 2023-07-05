@@ -42,7 +42,6 @@
       </video>
 </header>
 <div class="main">
-
     <section class="grids2">
         <div>
         <h1 class="whiteh">Välkommen till Supreme</h1>
@@ -54,11 +53,13 @@
             Vi ser fram emot att få välkomna dig till vår restaurang och dela vår passion för mat och service. Boka ditt bord idag och låt oss skapa en minnesvärd upplevelse tillsammans.</p>
         </div>
         <div>
-        <img src="images/firstimage.jpg" class="imagemedium" alt="Bild på restaurangen tagen utifrån, snett uppifrån, med vattnet utanför terassen. På terassen sitter det folk och äter av restaurangens goda.">
+          <picture>
+            <source srcset="images/firstimagemedium.jpg" media="(max-width: 450px)">
+            <source srcset="images/firstimage.jpg" media="(min-width: 450px)">
+            <img src="images/firstimage.jpg" class="imagemedium" alt="Bild på restaurangen tagen utifrån, snett uppifrån, med vattnet utanför terassen. På terassen sitter det folk och äter av restaurangens goda.">
+          </picture>
     </div>
     </section>
-
-
     <section class="bookwrapper">
         <div class="book">
         <div>
@@ -78,18 +79,28 @@
     </div>
 </div>
     </section>
-
 <section id="menu" class="menu"><h2 class="centerh2">Meny</h2></section> 
- 
 <div class="grids3">
-    <img src="images/img1.jpg" class="smallimg" alt="Flera personer som skålar. I glasen har de husets röda.">
-    <img src="images/img2.jpg" class="smallimg" alt="Bild på restaurangens förätt som består av avocado och egg benedict på rostat bröd.">
-    <img src="images/img3.jpg" class="smallimg" alt="En av restaurangens förrätter står på bordet som är dukat för fest. Bakom bordet ser man en soffa, bredvid en krukpalm och bakom soffan ser vi utsikten som består av ån.">
+  <picture>
+    <source srcset="images/img1small.jpg" media="(max-width: 530px)">
+    <source srcset="images/img1medium.jpg" media="(min-width: 530px) and (max-width: 1000px)">
+    <source srcset="images/img1.jpg" media="(min-width: 1000px)">
+    <img src="images/img1.jpg" class="smallimg"  alt="Flera personer som skålar. I glasen har de husets röda.">
+  </picture>
+  <picture>
+    <source srcset="images/img2small.jpg" media="(max-width: 530px)">
+    <source srcset="images/img2medium.jpg" media="(min-width: 530px) and (max-width: 1000px)">
+    <source srcset="images/img2.jpg" media="(min-width: 1000px)">
+    <img src="images/img1.jpg" class="smallimg"  alt="Bild på restaurangens förätt som består av avocado och egg benedict på rostat bröd.">
+  </picture>
+  <picture>
+    <source srcset="images/img3small.jpg" media="(max-width: 530px)">
+    <source srcset="images/img3medium.jpg" media="(min-width: 530px) and (max-width: 1000px)">
+    <source srcset="images/img3.jpg" media="(min-width: 1000px)">
+    <img src="images/img1.jpg" class="smallimg"  alt="En av restaurangens förrätter står på bordet som är dukat för fest. Bakom bordet ser man en soffa, bredvid en krukpalm.">
+  </picture>
 </div>
-
 </div>
-
-
 <footer>
   <div class="footergrids">
     <div class="line1"></div>
@@ -98,33 +109,27 @@
     </a>
     <div class="line2"></div>
     </div>
-    
     <section class="footergrid">
     <div>
-      <h2>Restaurant Supreme</h2>
+      <h2 class="footerh2">Restaurant Supreme</h2>
     <p>Gatan3<br>
     12345 Staden<br>
 0123-4567890</p>
-
 <a href="sites/jobb.html" class="whitea">Lediga jobb</a>
 </div>
-
 <div class="div2">
     <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook icon som vid klick leder till facebook." class="icon1"></a>
     <a href="https://instagram.com"><img src="images/instagram.png" alt="instagram icon som vid klick leder till instagram." class="icon2"></a>
-
     <ul>
       <li><a href="index.html">Hem</a></li>
   <li><a href="sites/nyheter.html">Nyheter</a></li>
     <li><a href="sites/om.html">Om Supreme</a></li>
     <li><a href="sites/kontakt.html">Kontakt</a></li>
   </ul>
-  
 </div>
 </section>
 <script src="js/menu.js"></script>
 <script src="js/main.js" type="module"></script>
 </footer>
-
 </body>
 </html>

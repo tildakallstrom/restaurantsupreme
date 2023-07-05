@@ -13,7 +13,6 @@
     <a class="logo" href="../index.html">
       Restaurant Supreme
     </a>
-    
       <div class="menuham">
         <div class="ham" id="hamburger" onclick="hamburgermenu(this)">
           <div class="lineone"></div>
@@ -31,9 +30,12 @@
       </nav>
       </div>
     </div>
-    <img class="headerimg" src="../images/headerom.jpg" alt="Headerbild - bild på ett bord dukat med små förrätter. I bakgrunden är restaurangens bar där man kan se många drycker på väggen bakom bardisken.">
+    <picture>
+      <source srcset="../images/headerommedium.jpg" media="(max-width: 800px)">
+      <source srcset="../images/headerom.jpg" media="(min-width: 800px)">
+      <img src="../images/headerom.jpg" class="headerimg"  alt="Headerbild - bild på ett bord dukat med små förrätter.">
+    </picture>
 </header>
-
 <div class="main">
   <section class="grids2">
     <div>
@@ -51,23 +53,34 @@
         Vi ser fram emot att få välkomna dig till vår restaurang och dela vår passion för mat och service. Boka ditt bord idag och låt oss skapa en minnesvärd upplevelse tillsammans.</p>
     </div>
     <div>
-    <img src="../images/om.jpg" class="imagemedium margintop2" alt="En bild tagen på en av kockarna som är i full färd med att preparear köttet för servering.">
+      <picture>
+        <source srcset="../images/ommedium.jpg" media="(max-width: 450px)">
+        <source srcset="../images/om.jpg" media="(min-width: 450px)">
+        <img src="../images/om.jpg" class="imagemedium margintop2" alt="En bild tagen på en av kockarna som är i full färd med att preparera köttet för servering.">
+      </picture>
 </div>
 </section>
-
-
-
 <div class="grids3">
-    <img src="../images/img1om.jpg" class="smallimg" alt="Vin hälls upp i ett glas. I bakgrunden kan man skymta mat som väntar på att få ätas.">
-    <img src="../images/img2om.jpg" class="smallimg" alt="Bild tagen uppifrån på ett bord där det står ravioli, ett glas rött vin och man kan se händerna på en person som plockar timjan från en kvist till maten.">
-    <img src="../images/img3om.jpg" class="smallimg" alt="Bild på ett fint dukat bort fyllt med goda drycker och tallrikar som väntar på att fyllas.">
+  <picture>
+    <source srcset="../images/img1omsmall.jpg" media="(max-width: 530px)">
+    <source srcset="../images/img1ommedium.jpg" media="(min-width: 530px) and (max-width: 1000px)">
+    <source srcset="../images/img1om.jpg" media="(min-width: 1000px)">
+    <img src="../images/img1om.jpg" class="smallimg"  alt="Vin hälls upp i ett glas. I bakgrunden kan man skymta mat som väntar på att få ätas.">
+  </picture>
+  <picture>
+    <source srcset="../images/img2omsmall.jpg" media="(max-width: 530px)">
+    <source srcset="../images/img2ommedium.jpg" media="(min-width: 530px) and (max-width: 1000px)">
+    <source srcset="../images/img2om.jpg" media="(min-width: 1000px)">
+    <img src="../images/img2om.jpg" class="smallimg"  alt="En av restaurangens förrätter står på bordet som är dukat för fest. Bakom bordet ser man en soffa, bredvid en krukpalm.">
+  </picture>
+  <picture>
+    <source srcset="../images/img3omsmall.jpg" media="(max-width: 530px)">
+    <source srcset="../images/img3ommedium.jpg" media="(min-width: 530px) and (max-width: 1000px)">
+    <source srcset="../images/img3om.jpg" media="(min-width: 1000px)">
+    <img src="../images/img3om.jpg" class="smallimg"  alt="Bild på ett fint dukat bort fyllt med goda drycker och tallrikar som väntar på att fyllas.">
+  </picture>
 </div>
-
 </div>
-
-
-    
-
 <footer>
   <div class="footergrids">
     <div class="line1"></div>
@@ -76,28 +89,23 @@
     </a>
     <div class="line2"></div>
     </div>
-    
     <section class="footergrid">
     <div>
       <h2 class="footerh2">Restaurant Supreme</h2>
     <p>Gatan3<br>
     12345 Staden<br>
 0123-4567890</p>
-
 <a href="jobb.html" class="whitea">Lediga jobb</a>
 </div>
-
 <div class="div2">
     <a href="https://facebook.com"><img src="../images/facebook.png" alt="Facebook" class="icon1"></a>
     <a href="https://instagram.com"><img src="../images/instagram.png" alt="instagram" class="icon2"></a>
-
     <ul>
       <li><a href="../index.html">Hem</a></li>
   <li><a href="nyheter.html">Nyheter</a></li>
     <li><a href="om.html">Om Supreme</a></li>
     <li><a href="kontakt.html">Kontakt</a></li>
   </ul>
-  
 </div>
 </section>
 <script src="../js/menu.js"></script>

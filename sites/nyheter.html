@@ -30,7 +30,12 @@
       </nav>
       </div>
     </div>
-    <img class="headerimg" src="../images/headernews.jpg" alt="Headerbild - bild på ett fint dukat bord fyllt med vinglas, blommor och vikta servetter.">
+    <picture>
+      <source srcset="../images/headernewsmedium.jpg" media="(max-width: 800px)">
+      <source srcset="../images/headernews.jpg" media="(min-width: 800px)">
+      <img src="../images/headernews.jpg" class="headerimg"  alt="Headerbild - bild på ett fint dukat bord fyllt med vinglas, blommor och vikta servetter.">
+    </picture>
+
 </header>
 <section class="main">
     <h1 class="centerh2 whiteh">Nyheter</h1>
