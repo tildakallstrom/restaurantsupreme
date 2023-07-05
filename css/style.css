@@ -313,7 +313,7 @@ Optimized down to 300px wide screens */
   }
   footer {
     background-color: #2e4c46;
-    color: white;
+    color: #f9feeb;
     padding-top: 1em;
     line-height: 1.5em;
     padding-bottom: 1em;
@@ -330,7 +330,7 @@ Optimized down to 300px wide screens */
         padding-bottom: 2em;
   }
   .whitea {
-    color: white;
+    color: #f9feeb;
     font-family: 'Lora', serif;
     text-decoration: none;
   }
