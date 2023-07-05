@@ -302,6 +302,7 @@ Optimized down to 300px wide screens */
 }
   h3 {
     font-family: 'Lora', serif;
+    font-weight: 400;
   }
   p {
     font-family: 'Lora', serif;
@@ -332,6 +333,9 @@ Optimized down to 300px wide screens */
     color: white;
     font-family: 'Lora', serif;
     text-decoration: none;
+  }
+  .div2 {
+    margin-top: 1.5em;
   }
   .div2 img{
    float: right;
