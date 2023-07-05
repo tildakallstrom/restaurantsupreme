@@ -48,7 +48,7 @@ class ArticleManager {
       articleDate.textContent = date;
       articleContainer.appendChild(articleDate);
 
-      const articleTitle = document.createElement('h2');
+      const articleTitle = document.createElement('h1');
       articleTitle.textContent = title;
       articleContainer.appendChild(articleTitle);
   
