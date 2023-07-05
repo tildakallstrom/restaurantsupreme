@@ -44,18 +44,15 @@ class MenuManager {
         const menuItem = this.createMenuItem(menu);
         section.appendChild(menuItem);
       });
-  
       this.menuEl.appendChild(section);
     }
     createMenuItem(menu) {
       const menuItem = document.createElement('article');
       menuItem.classList.add('menu-item');
-  
       const descriptionEl = document.createElement('p');
       descriptionEl.classList.add('description');
       descriptionEl.textContent = menu.description;
       menuItem.appendChild(descriptionEl);
-  
       return menuItem;
     }
   }
