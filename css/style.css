@@ -442,7 +442,7 @@ Optimized down to 300px wide screens */
   }
   @media only screen and (max-width: 1300px) {
     .one-article {
-      max-width: 800px;
+      max-width: 600px;
       width: 95%;
       margin: auto;
       padding: 1em;
@@ -467,7 +467,7 @@ Optimized down to 300px wide screens */
       margin-top: 3em;
     }
     .one-article {
-      max-width: 800px;
+      max-width: 600px;
       width: 100%;
       margin-left: 3em;
       border: 1px solid lightgray;
