@@ -17,7 +17,7 @@ class NewsManager {
 
           const readMoreButton = newsItem.querySelector('.read-more-button');
           readMoreButton.addEventListener('click', () => {
-            window.location.href = 'nyheter/artikel.html?id=' + news.id;
+            window.location.href = 'https://tildakallstrom.se/Supreme/sites/nyheter/artikel.html?id=' + news.id;
           });
         });
       });

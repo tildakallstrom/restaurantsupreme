@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <title>Nyheter - Restaurang Supreme</title>
-    <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+  <meta charset="UTF-8">
+  <title>Nyheter - Restaurang Supreme</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">   
+  <link rel="stylesheet" href="../../css/style.css" type="text/css">
 </head>
 <body>
 <header>
 <div class="grids">
- <header>
-   
-  
-   <div class="topheader">
-      <a class="logo" href="index.html">
-        <h1>Restaurant Supreme</h1>
-      </a>
-    
+  <div class="topheader">
+    <a class="logo" href="../../index.html">
+      Restaurant Supreme
+    </a>
       <div class="menuham">
         <div class="ham" id="hamburger" onclick="hamburgermenu(this)">
           <div class="lineone"></div>
@@ -30,44 +28,47 @@
           <li><a href="../kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
- 
       </div>
     </div>
+    <img class="headerimg" src="../../images/headernews.jpg" alt="Headerbild - bild på ett fint dukat bord fyllt med vinglas, blommor och vikta servetter.">
 </header>
-<div class="main">
-    <section id="article" class="article-section">
-        <h2 id="article-title" class="article-title"></h2>
-        <p id="article-content" class="article-content"></p>
-        <span id="article-author" class="article-author"></span>
-        <span id="article-date" class="article-date"></span>
-      </section>
-      
-    
+<div class="main main-article">
+    <div id="article" class="article-section"></div> 
+    <section> 
+      <h2 class="newsh2">Fler nyheter</h2> 
+    <div id="news" class="news-onearticle"></div>   
+  </section>
 </div>
-
-
-    
-
 <footer>
+  <div class="footergrids">
+    <div class="line1"></div>
+    <a class="logo1" href="index.html">
+    Supreme
+    </a>
+    <div class="line2"></div>
+    </div>
     <section class="footergrid">
     <div>
+      <h3>Restaurant Supreme</h3>
     <p>Gatan3<br>
     12345 Staden<br>
 0123-4567890</p>
-
-<a href="/jobb" class="whitea">Lediga jobb</a>
+<a href="../jobb.html" class="whitea">Lediga jobb</a>
 </div>
-
 <div class="div2">
-    <a><img src="../../images/facebook.png" alt="Facebook" class="icon1"></a>
-    <a><img src="../../images/instagram.png" alt="instagram" class="icon2"></a>
-
-    <button class="bookbtn">Boka bord</button>
+    <a href="https://facebook.com"><img src="../../images/facebook.png" alt="Facebook" class="icon1"></a>
+    <a href="https://instagram.com"><img src="../../images/instagram.png" alt="instagram" class="icon2"></a>
+    <ul>
+      <li><a href="../../index.html">Hem</a></li>
+  <li><a href="../nyheter.html">Nyheter</a></li>
+    <li><a href="../om.html">Om Supreme</a></li>
+    <li><a href="../kontakt.html">Kontakt</a></li>
+  </ul>
+  
 </div>
 </section>
 <script src="../../js/menu.js"></script>
-<script type="module" src="../../js/main.js"></script>
+<script src="../../js/main.js" type="module"></script>
 </footer>
-
 </body>
 </html>

@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <title>Nyheter - Restaurang Supreme</title>
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  <meta charset="UTF-8">
+  <title>Nyheter - Restaurang Supreme</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">   
+   <link rel="stylesheet" href="../css/style.css" type="text/css" >
 </head>
 <body>
 <header>
 <div class="grids">
- <header>
-   
-  
-   <div class="topheader">
-      <a class="logo" href="index.html">
-        <h1>Restaurant Supreme</h1>
-      </a>
-    
+  <div class="topheader">
+    <a class="logo" href="../index.html">
+      Restaurant Supreme
+    </a>
       <div class="menuham">
         <div class="ham" id="hamburger" onclick="hamburgermenu(this)">
           <div class="lineone"></div>
@@ -24,57 +22,59 @@
       </div>
       <nav class="navbar">
         <ul>
-            <li><a href="../index.html">Hem</a></li>
-        <li><a href="sites/nyheter.html">Nyheter</a></li>
-          <li><a href="sites/om.html">Om Supreme</a></li>
-          <li><a href="sites/kontakt.html">Kontakt</a></li>
+          <li><a href="../index.html">Hem</a></li>
+          <li><a href="nyheter.html">Nyheter</a></li>
+          <li><a href="om.html">Om Supreme</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
- 
       </div>
     </div>
+    <img class="headerimg" src="../images/headernews.jpg" alt="Headerbild - bild på ett fint dukat bord fyllt med vinglas, blommor och vikta servetter.">
 </header>
-<div class="main">
-    <section id="news"></section>
+<section class="main">
+    <h2 class="centerh2 whiteh2">Nyheter</h2>
+    <p class="centerp whitep">Välkommen till vår nyhetssida! Här kan du hålla dig uppdaterad om det senaste från vår restaurang. Vi delar med oss av spännande nyheter, goda recept, evenemangsinformation och mycket mer. Ta del av våra artiklar för att få en inblick i vad som händer bakom kulisserna, ta del av inspirerande berättelser och upptäcka nya smaker.
 
-    <template id="news-template">
-        <article class="news-article">
-          <h3 id="news-title" class="news-title"></h3>
-          <img id="article-image" class="article-image" src="" alt="Article Image">
-          <p id="news-content" class="news-content"></p>
-          <span id="news-author" class="news-author"></span>
-          <span id="news-date" class="news-date"></span>
-          <a href="#" class="read-more">Läs mer</a>
-        </article>
-      </template>
-      
-    
-      
-</div>
-
-
-    
-
+        Vi strävar efter att erbjuda en engagerande och informativ nyhetsupplevelse för våra besökare. Genom att regelbundet uppdatera vår nyhetssida kan du vara säker på att du inte missar något av intresse. Oavsett om det handlar om nya spännande rätter på menyn, specialerbjudanden eller andra nyheter, finns det alltid något att upptäcka.
+        
+        Vi hoppas att du kommer att njuta av att läsa våra nyheter och att du får en inblick i vår restaurangs värld. Ta gärna en titt runt och känn dig som hemma. Tack för att du väljer att följa med oss på vår nyhetssida – vi ser fram emot att dela vårt senaste med dig!</p>
+    <div id="news" class="news"></div>   
+</section>
 <footer>
+  <div class="footergrids">
+    <div class="line1"></div>
+    <a class="logo1" href="index.html">
+    Supreme
+    </a>
+    <div class="line2"></div>
+    </div>
+    
     <section class="footergrid">
     <div>
+      <h3>Restaurant Supreme</h3>
     <p>Gatan3<br>
     12345 Staden<br>
 0123-4567890</p>
 
-<a href="/jobb" class="whitea">Lediga jobb</a>
+<a href="jobb.html" class="whitea">Lediga jobb</a>
 </div>
 
 <div class="div2">
-    <a><img src="../images/facebook.png" alt="Facebook" class="icon1"></a>
-    <a><img src="../images/instagram.png" alt="instagram" class="icon2"></a>
+    <a href="https://facebook.com"><img src="../images/facebook.png" alt="Facebook" class="icon1"></a>
+    <a href="https://instagram.com"><img src="../images/instagram.png" alt="instagram" class="icon2"></a>
 
-    <button class="bookbtn">Boka bord</button>
+    <ul>
+      <li><a href="../index.html">Hem</a></li>
+  <li><a href="nyheter.html">Nyheter</a></li>
+    <li><a href="om.html">Om Supreme</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+  
 </div>
 </section>
 <script src="../js/menu.js"></script>
-<script type="module" src="../js/main.js"></script>
+<script src="../js/main.js" type="module"></script>
 </footer>
-
 </body>
 </html>
